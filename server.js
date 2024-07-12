@@ -47,7 +47,7 @@ app.post('/api/submit', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('<h1>Welcome to the Backend Server!</h1><p>This is a custom message.</p>');
+  res.send('<h1>Welcome to the Backend Server! g</h1><p>This is a custom message.</p>');
 });
 
 app.listen(port, () => {
