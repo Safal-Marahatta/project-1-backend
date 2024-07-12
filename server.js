@@ -13,6 +13,7 @@ app.use(cors());
 // MySQL connection
 const db = mysql.createConnection({
   host: 'localhost',
+  port: '3306',
   user: 'newusername',
   password: 'password',
   database: 'your_database'
@@ -43,6 +44,10 @@ app.post('/api/submit', (req, res) => {
 
     res.send('ok i received');
   });
+});
+
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome to the Backend Server!</h1><p>This is a custom message.</p>');
 });
 
 app.listen(port, () => {
