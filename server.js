@@ -32,7 +32,7 @@ app.post('/api/submit', (req, res) => {
   const { name } = req.body;
 
   if (!name) {
-    return res.status(400).send('Name is required');
+    return res.status(400).send('Name is required ok');
   }
 
   const query = 'INSERT INTO your_table (name) VALUES (?)';
