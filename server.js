@@ -38,7 +38,7 @@ app.post('/api/submit', (req, res) => {
   const query = 'INSERT INTO your_table (name) VALUES (?)';
   db.query(query, [name], (err, result) => {
     if (err) {
-      console.error('Error inserting data:', err);
+      console.error('Error inserting data ok :', err);
       return res.status(500).send('Server error');
     }
 
