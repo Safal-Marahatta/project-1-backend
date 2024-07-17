@@ -39,4 +39,4 @@ jobs:
             sudo docker stop backend || true
             sudo docker rm backend || true
             sudo docker run -d --name backend --network=host safal7120/backend:latest
-            echo "It is completed succesfully"
+            echo "It is completed succesfully" 
