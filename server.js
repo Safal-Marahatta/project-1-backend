@@ -12,7 +12,7 @@ app.use(cors());
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: '',
+  host: 'localhost',
   port: '3306',
   user: 'newusername',
   password: 'password',
