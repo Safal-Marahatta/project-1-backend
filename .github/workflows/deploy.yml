@@ -38,5 +38,5 @@ jobs:
             sudo docker pull safal7120/backend:latest
             sudo docker stop backend || true
             sudo docker rm backend || true
-            sudo docker run -p 3001:3001 -d --name backend  safal7120/backend:latest
+            sudo docker run -d --name backend --network=host safal7120/backend:latest
             echo "It is completed succesfully"
